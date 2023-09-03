@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <!-- ! ------------L i n k s -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/skitter.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+</head>
+
+<body>
+     <!-- ^ Side Bar -->
+    <div class="sideBar position-fixed top-0 bottom-0 bg-black d-flex">
+        <div class="sideBarLinks px-4 d-flex flex-column justify-content-around">
+            <ul class="list-unstyled">
+                <li class="py-2 position-relative top-0">
+                    <a href="#" class="sideBar-link" id="search">Search</a>
+                </li>
+                <li class="py-2 position-relative top-0">
+                    <a href="#" class="sideBar-link " id="categoryData">Categories</a>
+                </li>
+                <li class="py-2 position-relative top-0">
+                    <a href="#" class="sideBar-link " id="areaData">Area</a>
+                </li>
+                <li class="py-2 position-relative top-0">
+                    <a href="#" class="sideBar-link " id="ingredientData">Ingredients</a>
+                </li>
+                <li class="py-2 position-relative top-0">
+                    <a href="#" class="sideBar-link " id="contactUs">Contact Us</a>
+                </li>
+            </ul>
+            <div class="sideBarFooter">
+                <div class="footerIcon text-white">
+                    <i class="fa fa-brands fa-facebook pe-2"></i>
+                    <i class="fa fa-brands fa-twitter pe-2"></i>
+                    <i class="fa-solid fa-globe pe-2"></i>
+                </div>
+                <P class=" text-white mt-3" id="copyRight"></P>
+            </div>
+        </div>
+
+        <div class="sideBarIcon bg-white d-flex flex-column justify-content-between text-center p-2">
+            <img src="img/logo.png" alt="logo">
+            <div>
+                <i class="fa-solid fa-xmark fs-1" id="closeSideBar"></i>
+                <i class="fa-solid open-close-icon fa-align-justify fa-2x d-none" id="openSideBar"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-globe d-block"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ^ Search -->
+    <div class="container mt-5">
+        <div class="row d-none" id="showSearch">
+            <div class="col-md-6">
+                <input type="text" placeholder="Search By Name" id="userInputName" class="form-control">
+            </div>
+            <div class="col-md-6">
+                <input type="text" placeholder="Search By first Letter" class="form-control">
+            </div>
+        </div>
+        <div class="searchByName mt-3">
+            <div class="row g-4" id="searchByName">
+               
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ^ Display Category -->
+    <div class="container" id="meal">
+        <div class="row py-4 g-4" id="displayMeal">
+
+        </div>
+    </div>
+
+    <!-- ^ FilterCategory -->
+    <div class="details container d-none" id="detailsCategory">
+        <div class="row g-4" id="filterCategory">
+
+        </div>
+    </div>
+
+    <!-- ^ MealInstructions -->
+    <div class="container">
+        <div class="row" id="mealInstructions">
+           
+        </div>
+    </div>
+
+    <!-- ^ Display Area -->
+    <div class="container" id="area">
+        <div class="row g-4" id="displayArea">
+        </div>
+    </div>
+
+    <!--^ displayMealOfArea -->
+    <div class="container d-none" id="areaMeal">
+        <div class="row g-4" id="mealOfArea">    
+        </div>
+    </div>
+
+    <!-- ^ Display Ingredient -->
+    <div class="container" id="ingredient">
+        <div class="row" id="displayIngredient">
+
+        </div>
+    </div>
+
+    <!-- ^ Contact Us -->
+    <div class="container vh-100 align-items-center justify-content-center d-none" id="contactForm">
+        <div class="row g-4">
+
+            <div class="col-md-6">
+                <input type="text" placeholder="Enter Your Name" name="userName" class="form-control">
+            </div>
+
+            <div class="col-md-6">
+                <input type="email" placeholder="Enter Your Email" name="userEmail" class="form-control">
+            </div>
+
+            <div class="col-md-6">
+                <input type="tel" placeholder="Enter Your Phone" name="userPhone" class="form-control">
+            </div>
+
+            <div class="col-md-6">
+                <input type="number" placeholder="Enter Your Age" name="userAge" class="form-control">
+            </div>
+
+            <div class="col-md-6">
+                <input type="password" placeholder="Enter Your Password" name="userPassword" class="form-control">
+            </div>
+
+            <div class="col-md-6">
+                <input type="password" placeholder="Enter Your rePassword" name="userRePassword" class="form-control">
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- ^ Loading -->
+
+    <div id="loader" class=" d-none">
+        <div class="lds-dual-ring"></div>
+    </div>
+
+    <!-- ! ------------L i n k s -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/code.jquery.com_jquery-3.7.0.js"></script>
+    <script src="js/main.js" type="module"></script>
+</body>
+
+</html>
